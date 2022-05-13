@@ -1,3 +1,5 @@
+
+
 const apiKey = 'pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw';
 const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 12);
 
@@ -9,6 +11,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34hc6qh000r14obunq4pkov
     zoomOffset: -1,
     accessToken: apiKey
 }).addTo(map);
+
+
 
 // adding a maker
 const marker1 = L.marker([53.359333776842796, -6.264963016509977]).addTo(map);
