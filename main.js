@@ -1,7 +1,7 @@
 const apiKey = 'pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw';
 const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 12);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34hc6qh000r14obunq4pkov/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
@@ -23,6 +23,20 @@ const marker9 = L.marker([53.3512053199182, -6.260269123049618]).addTo(map);
 const marker10 = L.marker([53.3515803819934, -6.267611584419626]).addTo(map);
 const marker11 = L.marker([53.33396074172391, -6.275555123080883]).addTo(map);
 const marker12 = L.marker([53.26384812011494, -6.111010984575096]).addTo(map);
+const marker13 = L.marker([53.33878384902731, -6.271452137410713]).addTo(map);
+const marker14 = L.marker([53.34030990396765, -6.273423592384708]).addTo(map);
+const marker15 = L.marker([53.337128078113416, -6.271431084445537]).addTo(map);
+const marker16 = L.marker([53.3376246673788, -6.272701776499977]).addTo(map);
+const marker17 = L.marker([53.31985750741642, -6.412877676530894]).addTo(map);
+const marker18 = L.marker([53.344589662430984, -6.278246461693057]).addTo(map);
+const marker19 = L.marker([53.34426563134462, -6.28057596169225]).addTo(map);
+const marker20 = L.marker([53.35905445365077, -6.26432629235125]).addTo(map);
+const marker21 = L.marker([53.3224501641176, -6.2658211003611815]).addTo(map);
+const marker22 = L.marker([53.34150514631019, -6.352849915122556]).addTo(map);
+const marker23 = L.marker([53.34780775678031, -6.270845377574889]).addTo(map);
+const marker24 = L.marker([53.35322158965548, -6.267334685828126]).addTo(map);
+const marker25 = L.marker([53.33339602575879, -6.274850755178759]).addTo(map);
+
 // add popup message
 // contains a div with the title in a h3
 // video source and style
@@ -135,7 +149,7 @@ let carhand = `
 <div style="text-align:center">
     <h3>Carhand</h3>
     <video width="200" height="240" autoplay loop>
-    <source src="videos/carhand.mp4" type="video/mp4">
+    <source src="videos/carhandfinal.mp4" type="video/mp4">
    
 </div>
 `
@@ -147,6 +161,125 @@ let mushroom = `
     <h3>Mushroom</h3>
     <video width="200" height="240" autoplay loop>
     <source src="videos/mushroomfinal.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let propellor = `
+<div style="text-align:center">
+    <h3>Propellor</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/PROPELLOR.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let construction = `
+<div style="text-align:center">
+    <h3>Construction</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/CONSTRUCTION_FINAL.mp4" type="video/mp4">
+   
+</div>
+`
+
+// add popup message
+let frogs = `
+<div style="text-align:center">
+    <h3>Frogs</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/FROGS.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let tilewall = `
+<div style="text-align:center">
+    <h3>Tile Wall</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/TILEWALL.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let electrip = `
+<div style="text-align:center">
+    <h3>ElecTrip</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/ELECTRIP.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let eraser = `
+<div style="text-align:center">
+    <h3>Eraser</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/ERASER.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let suitcase = `
+<div style="text-align:center">
+    <h3>Suitcase</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/SUITCASE_final.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let wallsmoke = `
+<div style="text-align:center">
+    <h3>Wallsmoke</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/WALLSMOKE.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let fruity = `
+<div style="text-align:center">
+    <h3>Fruity</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/FRUITY_final.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let ballyerblinds = `
+<div style="text-align:center">
+    <h3>Ballyer Blinds</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/BALLYERBLINDS.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let huestreet = `
+<div style="text-align:center">
+    <h3>Huestreet</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/huestreetfinal.mp4" type="video/mp4">
+   
+</div>
+`
+
+// add popup message
+let bear = `
+<div style="text-align:center">
+    <h3>Bear</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/BEARfinal.mp4" type="video/mp4">
+   
+</div>
+`
+// add popup message
+let bubble = `
+<div style="text-align:center">
+    <h3>Bubble Wrap</h3>
+    <video width="200" height="240" autoplay loop>
+    <source src="videos/bubblewrapfinal.mp4" type="video/mp4">
    
 </div>
 `
@@ -164,3 +297,19 @@ marker9.bindPopup(swan);
 marker10.bindPopup(wavywind);
 marker11.bindPopup(carhand);
 marker12.bindPopup(mushroom);
+marker13.bindPopup(propellor);
+marker14.bindPopup(construction);
+marker15.bindPopup(frogs);
+marker16.bindPopup(tilewall);
+marker17.bindPopup(electrip);
+marker18.bindPopup(eraser);
+marker19.bindPopup(suitcase);
+marker20.bindPopup(wallsmoke);
+marker21.bindPopup(fruity);
+marker22.bindPopup(ballyerblinds);
+marker23.bindPopup(huestreet);
+marker24.bindPopup(bear);
+marker25.bindPopup(bubble);
+
+
+
