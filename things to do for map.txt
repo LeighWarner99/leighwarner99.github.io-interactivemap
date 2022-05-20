@@ -1,0 +1,15 @@
+interactive map
+
+- move points over a wee bit
+- make map not move
+- main screen is ipad
+- change the markers
+
+
+Important 
+- full screen
+- make map not move
+- background music but music volume goes down when video is playing
+- tap to begin screen
+- header
+- custom map layer
