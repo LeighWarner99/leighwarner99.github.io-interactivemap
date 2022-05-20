@@ -3,7 +3,7 @@
 const apiKey = 'pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw';
 const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 12);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34hc6qh000r14obunq4pkov/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw', {
+L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34j5tc6001o14s9v4wpbzvn/wmts?access_token=pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
@@ -47,7 +47,7 @@ const marker25 = L.marker([53.33339602575879, -6.274850755178759]).addTo(map);
 let batmon = `
 <div style="text-align:center">
     <h3>Batmon</h3>
-    <video width="200" height="240" autoplay loop>
+    <video autoplay loop>
     <source src="videos/batmonfinal.mp4" type="video/mp4">
    
 </div>
@@ -58,7 +58,7 @@ let egg = `
 
 <div style="text-align:center">
     <h3>Egg</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="1080" height="1920" autoplay loop>
     <source src="videos/EGGfinal.mp4" type="video/mp4">
    
 </div>
