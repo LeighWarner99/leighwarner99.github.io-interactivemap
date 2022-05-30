@@ -1,15 +1,14 @@
 interactive map
 
 - move points over a wee bit
-- make map not move
 - main screen is ipad
 - change the markers
 
 
 Important 
-- full screen
-- make map not move
-- background music but music volume goes down when video is playing
+- full screen - (no attributes to allow for full screen)
+- make map not move (api doesnt have an attributes to allow it)
+- background music but music volume goes down when video is playing (cant get audio to autoplay as google removed feature, can get it to load but would have to press link)
 - tap to begin screen
 - header
 - custom map layer

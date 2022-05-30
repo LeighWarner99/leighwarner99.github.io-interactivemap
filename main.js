@@ -6,11 +6,15 @@ const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 12);
 L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34j5tc6001o14s9v4wpbzvn/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
+    minZoom:1,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: apiKey
+    accessToken: apiKey,
+    setMaxBounds: [53.345041773247594, -6.267405125761192]
 }).addTo(map);
+
+
 
 
 
@@ -41,13 +45,14 @@ const marker23 = L.marker([53.34780775678031, -6.270845377574889]).addTo(map);
 const marker24 = L.marker([53.35322158965548, -6.267334685828126]).addTo(map);
 const marker25 = L.marker([53.33339602575879, -6.274850755178759]).addTo(map);
 
+
 // add popup message
 // contains a div with the title in a h3
 // video source and style
 let batmon = `
 <div style="text-align:center">
     <h3>Batmon</h3>
-    <video autoplay loop>
+    <video width="300" height="440" controls autoplay loop>
     <source src="videos/batmonfinal.mp4" type="video/mp4">
    
 </div>
@@ -58,7 +63,7 @@ let egg = `
 
 <div style="text-align:center">
     <h3>Egg</h3>
-    <video width="1080" height="1920" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/EGGfinal.mp4" type="video/mp4">
    
 </div>
@@ -69,7 +74,7 @@ let merrionegg = `
 
 <div style="text-align:center">
     <h3>Merrion Egg</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/MERRIONEGG.mp4" type="video/mp4">
    
 </div>
@@ -80,7 +85,7 @@ let numbers = `
 
 <div style="text-align:center">
     <h3>Numbers</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/numbersfinal.mp4" type="video/mp4">
    
 </div>
@@ -90,7 +95,7 @@ let seahorse = `
 
 <div style="text-align:center">
     <h3>Seahorse</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/seahorse.mp4" type="video/mp4">
    
 </div>
@@ -100,7 +105,7 @@ let beauty = `
 
 <div style="text-align:center">
     <h3>Beauty</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/BEAUTY.mp4" type="video/mp4">
    
 </div>
@@ -110,7 +115,7 @@ let hello = `
 
 <div style="text-align:center">
     <h3>Hello</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/HEELLOOO.mp4" type="video/mp4">
    
 </div>
@@ -120,7 +125,7 @@ let grafmon = `
 
 <div style="text-align:center">
     <h3>Grafmon</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/grafmonfinal.mp4" type="video/mp4">
    
 </div>
@@ -131,7 +136,7 @@ let swan = `
 
 <div style="text-align:center">
     <h3>Swan</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/swan.mp4" type="video/mp4">
    
 </div>
@@ -142,7 +147,7 @@ let wavywind = `
 
 <div style="text-align:center">
     <h3>Wavywind</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/WAVYWIND 04.mp4" type="video/mp4">
    
 </div>
@@ -152,7 +157,7 @@ let carhand = `
 
 <div style="text-align:center">
     <h3>Carhand</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/carhandfinal.mp4" type="video/mp4">
    
 </div>
@@ -163,7 +168,7 @@ let mushroom = `
 
 <div style="text-align:center">
     <h3>Mushroom</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/mushroomfinal.mp4" type="video/mp4">
    
 </div>
@@ -172,7 +177,7 @@ let mushroom = `
 let propellor = `
 <div style="text-align:center">
     <h3>Propellor</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/PROPELLOR.mp4" type="video/mp4">
    
 </div>
@@ -181,7 +186,7 @@ let propellor = `
 let construction = `
 <div style="text-align:center">
     <h3>Construction</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/CONSTRUCTION_FINAL.mp4" type="video/mp4">
    
 </div>
@@ -191,7 +196,7 @@ let construction = `
 let frogs = `
 <div style="text-align:center">
     <h3>Frogs</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/FROGS.mp4" type="video/mp4">
    
 </div>
@@ -200,7 +205,7 @@ let frogs = `
 let tilewall = `
 <div style="text-align:center">
     <h3>Tile Wall</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/TILEWALL.mp4" type="video/mp4">
    
 </div>
@@ -209,7 +214,7 @@ let tilewall = `
 let electrip = `
 <div style="text-align:center">
     <h3>ElecTrip</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/ELECTRIP.mp4" type="video/mp4">
    
 </div>
@@ -218,7 +223,7 @@ let electrip = `
 let eraser = `
 <div style="text-align:center">
     <h3>Eraser</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/ERASER.mp4" type="video/mp4">
    
 </div>
@@ -227,7 +232,7 @@ let eraser = `
 let suitcase = `
 <div style="text-align:center">
     <h3>Suitcase</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/SUITCASE_final.mp4" type="video/mp4">
    
 </div>
@@ -236,7 +241,7 @@ let suitcase = `
 let wallsmoke = `
 <div style="text-align:center">
     <h3>Wallsmoke</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/WALLSMOKE.mp4" type="video/mp4">
    
 </div>
@@ -245,7 +250,7 @@ let wallsmoke = `
 let fruity = `
 <div style="text-align:center">
     <h3>Fruity</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/FRUITY_final.mp4" type="video/mp4">
    
 </div>
@@ -254,7 +259,7 @@ let fruity = `
 let ballyerblinds = `
 <div style="text-align:center">
     <h3>Ballyer Blinds</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/BALLYERBLINDS.mp4" type="video/mp4">
    
 </div>
@@ -263,7 +268,7 @@ let ballyerblinds = `
 let huestreet = `
 <div style="text-align:center">
     <h3>Huestreet</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/huestreetfinal.mp4" type="video/mp4">
    
 </div>
@@ -273,7 +278,7 @@ let huestreet = `
 let bear = `
 <div style="text-align:center">
     <h3>Bear</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/BEARfinal.mp4" type="video/mp4">
    
 </div>
@@ -282,7 +287,7 @@ let bear = `
 let bubble = `
 <div style="text-align:center">
     <h3>Bubble Wrap</h3>
-    <video width="200" height="240" autoplay loop>
+    <video width="300" height="440" controls loop>
     <source src="videos/bubblewrapfinal.mp4" type="video/mp4">
    
 </div>
@@ -314,6 +319,4 @@ marker22.bindPopup(ballyerblinds);
 marker23.bindPopup(huestreet);
 marker24.bindPopup(bear);
 marker25.bindPopup(bubble);
-
-
 
