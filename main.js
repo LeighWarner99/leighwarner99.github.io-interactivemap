@@ -1,11 +1,11 @@
 
 
 const apiKey = 'pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw';
-const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 12);
+const map = L.map('map').setView([53.345483419622454, -6.267340771468092], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/leigh999/cl34j5tc6001o14s9v4wpbzvn/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibGVpZ2g5OTkiLCJhIjoiY2wxZXdsMG43MDBhajNkcGZ6OTB6YWRjaCJ9.Cw81XzkSnwd05aIR4ek-Rw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
+    maxZoom: 19,
     minZoom:1,
     id: 'mapbox/streets-v11',
     tileSize: 512,
