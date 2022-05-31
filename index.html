@@ -3,41 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="style.css"/>
-    <title>Interactive Map </title>
+    <title>Landing Page </title>
    
 </head>
 <body>
-    <div id="map"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="main.js">
-    </script>
-    <script>
-    
+ 
+    <div class="video-container">
+        <a href="map.html">
+            <video src="videos/intro.mp4" width="100px" height="100px" autoplay muted loop></video>
 
-    function idleLogout() {
-    var t;
-    window.onload = resetTimer;
-    window.onmousemove = resetTimer;
-    window.onmousedown = resetTimer;  // catches touchscreen presses as well      
-    window.ontouchstart = resetTimer; // catches touchscreen swipes as well      
-    window.ontouchmove = resetTimer;  // required by some devices 
-    window.onclick = resetTimer;      // catches touchpad clicks as well
-    window.onkeydown = resetTimer;   
-    window.addEventListener('scroll', resetTimer, true); // improved; see comments
-
-    function yourFunction() {
-          location.href = 'landingPage.html'
-    }
-
-    function resetTimer() {
-        clearTimeout(t);
-        t = setTimeout(yourFunction, 120000);  // time is in milliseconds
-    }
-}
-idleLogout();
-    </script>
+            <button style="background-color: #000000; color: #FFFFFF; border-radius: 5px;">Click me to begin</button>
+        </a>
+    </div>
+   
 
 </body>
 </html>
